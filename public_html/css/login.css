@@ -18,7 +18,7 @@
     border-bottom: 0px none white;
 }
 
-.input {
+.input>input {
     color: white;
 }
 
