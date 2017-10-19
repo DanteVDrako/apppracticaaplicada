@@ -19,6 +19,7 @@ function loadUser() {
         "success": function (data) {
             if (data.codeStatus === 200) {
                 document.title = document.title + " " + data.NOMBRE_USUARIO;
+                $("#lblWelcome").html("Bienvenido " + data.NOMBRE_USUARIO);
             }
         },
         "type": "post",
