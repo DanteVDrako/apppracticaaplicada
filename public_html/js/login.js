@@ -29,10 +29,12 @@ function login() {
     var user = $("#user");
     if (user.val() === "") {
         user.addClass("err");
+        return false;
     }
     var pwd = $("#pwd");
     if (pwd.val() === "") {
         pwd.addClass("err");
+        return false;
     }
     $.ajax({
         "data": {
