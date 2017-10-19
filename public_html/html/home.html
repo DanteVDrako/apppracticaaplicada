@@ -9,13 +9,14 @@
         <link rel="stylesheet" type="text/css" href="../css/general.css">
     </head>
     <body onload="init();">
+        
         <div class="frame" id="frame">
-            <label id="lblWelcome" ></label>
+            <label id="lblWelcome" class="lbl" ></label>
+            <button onclick="logout();" class="button">Cerrar sesion</button>
+            <script type="text/javascript" src="../js/vendor/jquery/jquery-3.2.1.min.js"></script>
+            <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+            <script type="text/javascript" src="../js/general.js"></script>
+            <script type="text/javascript" src="../js/home.js"></script>
         </div>
-        <button onclick="logout();" class="button">Cerrar sesion</button>
-        <script type="text/javascript" src="../js/vendor/jquery/jquery-3.2.1.min.js"></script>
-        <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
-        <script type="text/javascript" src="../js/general.js"></script>
-        <script type="text/javascript" src="../js/home.js"></script>
     </body>
 </html>
