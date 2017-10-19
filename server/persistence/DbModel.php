@@ -23,7 +23,7 @@ class DbModel {
         $array = array();
         if(mysqli_num_rows($result) > 0) {
             if($type === 'assoc') {
-                while($row = mysqli_fetch_array($result, MYSQL_ASSOC)) {
+                while($row = mysqli_fetch_assoc($result)) {
                     $array[] = $row;
                 }
             }
