@@ -1,6 +1,6 @@
 <?php
 
-define('DB_USER', 'root');
+define('DB_USER', 'roott');
 define('DB_PWD', '');
 define('DB_HOST', 'localhost');
 define('DB_NAME', 'appeventos');
