@@ -9,3 +9,8 @@
 .margin-left {
     margin-left: 0.5em;
 }
+
+.button {
+    background-color: #0D387B;
+    cursor: pointer;
+}

@@ -7,11 +7,6 @@
     height: auto !important;
 }
 
-.button {
-    background-color: #0D387B;
-    cursor: pointer;
-}
-
 .err {
     border-top: 1px solid rgba(255, 100, 50, 1);
     border-right: 1px solid rgba(255, 100, 50, 1);
