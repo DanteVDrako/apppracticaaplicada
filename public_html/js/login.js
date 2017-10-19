@@ -4,7 +4,7 @@ function init() {
 
 function loadUser() {
     var locationOrigin = window.location.origin;
-    var url = locationOrigin + "/app/server/user";
+    var url = locationOrigin + "/server/user";
     $.ajax({
         "data": {},
         "dataType": "json",
@@ -14,7 +14,7 @@ function loadUser() {
         "success": function (data) {
             if (data.codeStatus === 200) {
                 if (data.ID_USUARIO) {
-                    redirect("/app/home/");
+                    redirect("/home/");
                 }
             }
         },
