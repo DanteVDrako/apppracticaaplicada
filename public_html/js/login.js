@@ -62,6 +62,10 @@ function login() {
 }
 
 function reset() {
-    $("#user").val("");
-    $("#pwd").val("");
+    var user = $("#user");
+    user.val("");
+    user.removeClass("err");
+    var pwd = $("#pwd");
+    pwd.val("");
+    pwd.removeClass("err");
 }
