@@ -14,7 +14,7 @@ function loadUser() {
         "success": function (data) {
             if (data.codeStatus === 200) {
                 if (data.ID_USUARIO) {
-                    redirect("/home/");
+                    redirect("/public_html/html/home.html");
                 }
             }
         },
@@ -25,7 +25,7 @@ function loadUser() {
 
 function login() {
     var locationOrigin = window.location.origin;
-    var url = locationOrigin + "/app/server/login";
+    var url = locationOrigin + "/server/login";
     var user = $("#user");
     var pwd = $("#pwd");
     $.ajax({
@@ -40,7 +40,7 @@ function login() {
         "success": function (data) {
             if (data.codeStatus === 200) {
                 if (data.message === "authorized") {
-                    redirect("/app/home/");
+                    redirect("/public_html/html/home.html");
                 }
             }
         },

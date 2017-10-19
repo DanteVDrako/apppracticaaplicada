@@ -4,7 +4,7 @@ function init() {
 
 function loadUser() {
     var locationOrigin = window.location.origin;
-    var url = locationOrigin + "/app/server/user";
+    var url = locationOrigin + "/server/user";
     $.ajax({
         "data": {},
         "dataType": "json",
@@ -12,7 +12,7 @@ function loadUser() {
             var dataErr = err.responseJSON;
             if (dataErr.codeStatus === 401) {
                 if (dataErr.message === 'unauthorized') {
-                    redirect("/app/login/");
+                    redirect("/public_html/html/login.html");
                 }
             }
         },
@@ -28,7 +28,7 @@ function loadUser() {
 
 function logout() {
     var locationOrigin = window.location.origin;
-    var url = locationOrigin + "/app/server/logout";
+    var url = locationOrigin + "/server/logout";
     $.ajax({
         "data": {},
         "dataType": "json",
