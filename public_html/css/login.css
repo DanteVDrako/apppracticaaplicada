@@ -1,0 +1,16 @@
+.page__background {
+    background-color: #0458a0;
+}
+
+.logo {
+    max-width: 100%;
+    height: auto !important;
+}
+
+.background-button {
+    background-color: #0D387B;
+}
+
+a {
+    color: white;
+}

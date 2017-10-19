@@ -1,0 +1,3 @@
+RewriteEngine On
+RewriteRule login/$ public_html/html/login.html
+RewriteRule home/$ public_html/html/home.html
