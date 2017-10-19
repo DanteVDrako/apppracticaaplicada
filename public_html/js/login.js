@@ -27,7 +27,13 @@ function login() {
     var locationOrigin = window.location.origin;
     var url = locationOrigin + "/server/login";
     var user = $("#user");
+    if (user.val() === "") {
+        user.addClass("err");
+    }
     var pwd = $("#pwd");
+    if (pwd.val() === "") {
+        pwd.addClass("err");
+    }
     $.ajax({
         "data": {
             "user": user.val(),

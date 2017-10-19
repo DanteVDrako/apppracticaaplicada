@@ -11,6 +11,10 @@
     background-color: #0D387B;
 }
 
+.err {
+    border: #ff6600 solid 1em;
+}
+
 a {
     color: white;
 }
