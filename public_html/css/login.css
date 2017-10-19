@@ -12,7 +12,14 @@
 }
 
 .err {
-    border: #ff6600 solid 2px;
+    border-top: 1px solid rgba(255, 100, 50, 1);
+    border-right: 1px solid rgba(255, 100, 50, 1);
+    border-left: 1px solid rgba(255, 100, 50, 1);
+    border-bottom: 0px none white;
+}
+
+.input {
+    color: white;
 }
 
 a {

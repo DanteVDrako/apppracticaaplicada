@@ -30,11 +30,15 @@ function login() {
     if (user.val() === "") {
         user.addClass("err");
         return false;
+    } else {
+        user.removeClass("err");
     }
     var pwd = $("#pwd");
     if (pwd.val() === "") {
         pwd.addClass("err");
         return false;
+    } else {
+        pwd.removeClass("err");
     }
     $.ajax({
         "data": {
