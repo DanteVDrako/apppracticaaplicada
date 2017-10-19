@@ -7,8 +7,9 @@
     height: auto !important;
 }
 
-.background-button {
+.button {
     background-color: #0D387B;
+    cursor: pointer;
 }
 
 .err {
